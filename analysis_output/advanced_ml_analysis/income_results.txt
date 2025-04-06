@@ -1,0 +1,23 @@
+Advanced Model Results for income
+==================================================
+
+XGBoost:
+R² = 0.9840
+RMSE = 2729.42
+MAE = 1972.96
+
+LightGBM:
+R² = 0.9846
+RMSE = 2673.06
+MAE = 1611.33
+
+Neural Network:
+R² = 0.9541
+RMSE = 4616.97
+MAE = 3526.38
+
+Voting Ensemble:
+R² = 0.9883
+RMSE = 2330.30
+MAE = 1607.73
+

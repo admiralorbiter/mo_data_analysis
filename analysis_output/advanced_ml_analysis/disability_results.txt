@@ -1,0 +1,23 @@
+Advanced Model Results for disability
+==================================================
+
+XGBoost:
+R² = 0.4363
+RMSE = 4.03
+MAE = 2.99
+
+LightGBM:
+R² = 0.4350
+RMSE = 4.04
+MAE = 3.02
+
+Neural Network:
+R² = 0.0295
+RMSE = 5.29
+MAE = 3.86
+
+Voting Ensemble:
+R² = 0.3826
+RMSE = 4.22
+MAE = 3.09
+

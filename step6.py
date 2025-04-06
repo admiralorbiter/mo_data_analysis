@@ -9,13 +9,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.model_selection import train_test_split, GridSearchCV
-from sklearn.preprocessing import StandardScaler
+from sklearn.preprocessing import StandardScaler, RobustScaler
 from sklearn.linear_model import LinearRegression, Ridge, Lasso
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.impute import SimpleImputer
 import warnings
 import os
+from scipy import stats
 warnings.filterwarnings('ignore')
 
 # Create output directory
@@ -396,3 +397,46 @@ with open(summary_file, 'w') as f:
     
     f.write("\nBest Parameters for Disability Rate Prediction:\n")
     f.write(str(grid_search_disability.best_params_) + "\n")
+
+print("Applying advanced feature engineering...")
+# Add interaction terms and polynomial features
+df['Age_Income_Interaction'] = df['Median age (years)'] * df['Income_Per_Capita']
+df['Education_Income_Interaction'] = df['Education_Premium'] * df['Income_Per_Capita']
+df['Age_Squared'] = df['Median age (years)']**2
+df['Income_Per_Capita_Squared'] = df['Income_Per_Capita']**2
+df['Dependency_Ratio'] = df['Percent_Under_18'] + df['Percent_65_plus']
+df['Working_Age_Ratio'] = df['Percent_18_to_64'] / (100 - df['Percent_18_to_64'])
+
+# Update features list
+advanced_features = features + [
+    'Age_Income_Interaction', 'Education_Income_Interaction',
+    'Age_Squared', 'Income_Per_Capita_Squared',
+    'Dependency_Ratio', 'Working_Age_Ratio'
+]
+
+# Handle outliers
+def remove_outliers(X, y, n_sigmas=3):
+    z_scores = stats.zscore(X)
+    mask = np.all(np.abs(z_scores) < n_sigmas, axis=1)
+    return X[mask], y[mask]
+
+X_income_clean, y_income_clean = remove_outliers(X, y_income)
+X_disability_clean, y_disability_clean = remove_outliers(X, y_disability)
+
+# Apply robust scaling
+robust_scaler = RobustScaler()
+X_scaled_robust = robust_scaler.fit_transform(X_income_clean)
+
+# Try the stacking ensemble
+from sklearn.ensemble import StackingRegressor
+stacking_regressor = StackingRegressor(
+    estimators=[
+        ('lr', LinearRegression()),
+        ('rf', RandomForestRegressor(n_estimators=100, random_state=42)),
+        ('gb', GradientBoostingRegressor(n_estimators=100, random_state=42))
+    ],
+    final_estimator=LinearRegression()
+)
+stacking_regressor.fit(X_scaled_robust, y_income_clean)
+y_pred_stack = stacking_regressor.predict(robust_scaler.transform(X_test_income))
+stack_metrics = evaluate_model(y_test_income, y_pred_stack, "Stacking Ensemble")
