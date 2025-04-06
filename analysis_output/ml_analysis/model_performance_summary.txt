@@ -1,0 +1,21 @@
+==================================================
+Summary of Model Performance
+==================================================
+
+Income Prediction Models:
+Linear Regression: R² = 0.1795, RMSE = 20117.64
+Random Forest: R² = 0.0871, RMSE = 21219.52
+Gradient Boosting: R² = -0.0626, RMSE = 22893.56
+Tuned Gradient Boosting: R² = -0.0028, RMSE = 22239.50
+
+Disability Rate Prediction Models:
+Linear Regression: R² = 0.1575, RMSE = 6.35
+Random Forest: R² = 0.2320, RMSE = 6.07
+Gradient Boosting: R² = 0.2044, RMSE = 6.17
+Tuned Gradient Boosting: R² = 0.1748, RMSE = 6.29
+
+Best Parameters for Income Prediction:
+{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 150}
+
+Best Parameters for Disability Rate Prediction:
+{'learning_rate': 0.05, 'max_depth': 3, 'n_estimators': 100}
