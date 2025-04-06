@@ -1,0 +1,98 @@
+=== Multivariate Analysis Summary ===
+
+Available Data Categories:
+==================================================
+Demographic variables: Male, Female, Median age (years), Workers Median age (years), Speak language other than English, Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) Population 25 years and over with earnings, Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Less than high school graduate, Tota - MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!High school graduate (includes equivalency), Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Some college or associate's degree, Total - MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings Bachelor's degree, Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Graduate or professional degree, Total Population, Total Disability  Male, Total Disability Female
+Income variables: Households Mean income (dollars), Families - Median income (dollars), Families - Mean income (dollars), Married-couple families - Median income (dollars), Nonfamily households - Median income (dollars), Nonfamily households - Mean income (dollars), Workers Median earnings (dollars), Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) Population 25 years and over with earnings, Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Less than high school graduate, Tota - MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!High school graduate (includes equivalency), Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Some college or associate's degree, Total - MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings Bachelor's degree, Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Graduate or professional degree
+Education variables: Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Less than high school graduate, Tota - MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!High school graduate (includes equivalency), Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Some college or associate's degree, Total - MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings Bachelor's degree, Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Graduate or professional degree
+Disability variables: Total Disability , Total Disability  Male, Total Disability Female, Total Disability  With a hearing difficulty, Total Disability  With a vision difficulty, Total Disability  With a cognitive difficulty, Total Disability  With an ambulatory difficulty, Total Disability  With a self-care difficulty, Total Disability With an independent living difficulty, Percent with a disability
+Work-related variables: Total Workers 16 years and over, Workers Median age (years), Workers Native, Workers Foreign born, Workers Foreign born - Naturalized U.S. citizen, Workers Foreign born - Not a U.S. citizen, Workers Median earnings (dollars), Workers 16 years and over who did not work from home
+
+
+Demographics Analysis
+==================================================
+
+Relationship: Male vs Households Mean income (dollars)
+------------------------------
+Correlation coefficient: 0.233
+Relationship strength: weak
+Direction: positive
+Statistical significance: not significant
+R-squared value: nan
+P-value: nan
+
+Interpretation:
+- This indicates a weak positive relationship
+- The relationship is statistically not significant
+- nan% of the variance in Households Mean income (dollars) can be explained by Male
+
+
+Income and Work Analysis
+==================================================
+
+Relationship: Households Mean income (dollars) vs Total Workers 16 years and over
+------------------------------
+Correlation coefficient: 0.250
+Relationship strength: weak
+Direction: positive
+Statistical significance: not significant
+R-squared value: nan
+P-value: nan
+
+Interpretation:
+- This indicates a weak positive relationship
+- The relationship is statistically not significant
+- nan% of the variance in Total Workers 16 years and over can be explained by Households Mean income (dollars)
+
+
+Education Analysis
+==================================================
+
+Relationship: Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Less than high school graduate vs Households Mean income (dollars)
+------------------------------
+Correlation coefficient: 0.151
+Relationship strength: weak
+Direction: positive
+Statistical significance: not significant
+R-squared value: nan
+P-value: nan
+
+Interpretation:
+- This indicates a weak positive relationship
+- The relationship is statistically not significant
+- nan% of the variance in Households Mean income (dollars) can be explained by Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Less than high school graduate
+
+
+Disability Analysis
+==================================================
+
+Relationship: Total Disability  vs Male
+------------------------------
+Correlation coefficient: 0.953
+Relationship strength: strong
+Direction: positive
+Statistical significance: significant
+R-squared value: 0.908
+P-value: 0.000e+00
+
+Interpretation:
+- This indicates a strong positive relationship
+- The relationship is statistically significant
+- 90.8% of the variance in Male can be explained by Total Disability 
+- For each unit increase in Total Disability , Male changes by 3.41 units
+
+
+Overall Correlation Matrix Analysis
+==================================================
+
+Top 5 Most Important Correlations:
+1. Male and Female: 0.995
+   Interpretation: Strong positive relationship
+2. Total Disability  and Total Disability  Male: 0.993
+   Interpretation: Strong positive relationship
+3. Female and Total Disability : 0.955
+   Interpretation: Strong positive relationship
+4. Male and Total Disability : 0.953
+   Interpretation: Strong positive relationship
+5. Male and Total Disability  Male: 0.949
+   Interpretation: Strong positive relationship
