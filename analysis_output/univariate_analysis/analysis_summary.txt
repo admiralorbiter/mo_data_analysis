@@ -1,0 +1,170 @@
+=== Univariate Analysis Summary ===
+
+
+Age-related Variables:
+==================================================
+
+Variable: Median age (years)
+Mean: 42.78
+Median: 41.40
+Std Dev: 9.25
+Skewness: 0.36
+IQR: 10.60
+Range: 79.90
+------------------------------
+
+Variable: Workers Median age (years)
+Mean: 43.69
+Median: 43.40
+Std Dev: 6.61
+Skewness: -0.14
+IQR: 7.00
+Range: 47.90
+------------------------------
+
+Variable: Speak language other than English
+Mean: 4.36
+Median: 1.70
+Std Dev: 7.13
+Skewness: 3.77
+IQR: 5.65
+Range: 76.00
+------------------------------
+
+Income-related Variables:
+==================================================
+
+Variable: Households Mean income (dollars)
+Mean: 81744.78
+Median: 75038.00
+Std Dev: 32394.50
+Skewness: 3.24
+IQR: 27346.00
+Range: 328004.00
+------------------------------
+
+Variable: Families - Mean income (dollars)
+Mean: 96155.43
+Median: 88382.00
+Std Dev: 38107.61
+Skewness: 3.27
+IQR: 31953.00
+Range: 448401.00
+------------------------------
+
+Variable: Nonfamily households - Mean income (dollars)
+Mean: 48208.90
+Median: 44302.00
+Std Dev: 20036.51
+Skewness: 1.79
+IQR: 21552.00
+Range: 180076.00
+------------------------------
+
+Earnings-related Variables:
+==================================================
+
+Variable: Total MEDIAN EARNINGS IN THE PAST 12 MONTHS (IN 2023 INFLATION-ADJUSTED DOLLARS) - Population 25 years and over with earnings!!Some college or associate's degree
+Mean: 43608.40
+Median: 41667.00
+Std Dev: 15025.50
+Skewness: 6.03
+IQR: 12596.50
+Range: 233194.00
+------------------------------
+
+Disability-related Variables:
+==================================================
+
+Variable: Total Disability 
+Mean: 853.78
+Median: 254.50
+Std Dev: 1393.51
+Skewness: 2.61
+IQR: 837.75
+Range: 9355.00
+------------------------------
+
+Variable: Total Disability  Male
+Mean: 419.29
+Median: 131.00
+Std Dev: 666.90
+Skewness: 2.57
+IQR: 398.25
+Range: 4573.00
+------------------------------
+
+Variable: Total Disability Female
+Mean: 434.49
+Median: 116.00
+Std Dev: 735.96
+Skewness: 2.72
+IQR: 416.50
+Range: 4845.00
+------------------------------
+
+Variable: Total Disability  With a hearing difficulty
+Mean: 243.01
+Median: 81.50
+Std Dev: 386.82
+Skewness: 2.59
+IQR: 246.25
+Range: 2759.00
+------------------------------
+
+Variable: Total Disability  With a vision difficulty
+Mean: 154.35
+Median: 43.00
+Std Dev: 264.03
+Skewness: 2.82
+IQR: 145.25
+Range: 2215.00
+------------------------------
+
+Variable: Total Disability  With a cognitive difficulty
+Mean: 338.80
+Median: 87.00
+Std Dev: 581.57
+Skewness: 2.75
+IQR: 322.00
+Range: 3915.00
+------------------------------
+
+Variable: Total Disability  With an ambulatory difficulty
+Mean: 416.99
+Median: 128.00
+Std Dev: 680.04
+Skewness: 2.69
+IQR: 400.00
+Range: 4488.00
+------------------------------
+
+Variable: Total Disability  With a self-care difficulty
+Mean: 148.47
+Median: 43.00
+Std Dev: 252.22
+Skewness: 2.90
+IQR: 147.25
+Range: 1905.00
+------------------------------
+
+Variable: Total Disability With an independent living difficulty
+Mean: 290.63
+Median: 86.50
+Std Dev: 483.75
+Skewness: 2.69
+IQR: 290.25
+Range: 3284.00
+------------------------------
+
+Variable: Percent with a disability
+Mean: 17.49
+Median: 16.10
+Std Dev: 9.96
+Skewness: 2.81
+IQR: 9.03
+Range: 100.00
+------------------------------
+
+Education-related Variables:
+==================================================
